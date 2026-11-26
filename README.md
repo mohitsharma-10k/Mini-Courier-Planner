@@ -1,13 +1,11 @@
 # Mini-Courier Planner: Intelligent Logistics and Route Optimization System
 
 **Course:** Design & Analysis of Algorithms (ETCCDA302) — Capstone Assignment  
-**Programme:** B.Tech CSE & Specializations  
+**Programme:** B.Tech CSE Core 
 **Institution:** K.R. Mangalam University, Gurugram, Haryana  
 **Faculty Evaluator:** Dr. Shweta Agarwal  
 **Student Name:** Mohit Sharma  
-**Roll Number / PRN:** 2501010091  
-**Maximum Marks:** 100 Marks (Scaled down to 10 marks for final evaluation)  
-**Course Outcomes (COs):** CO1, CO2, CO3, CO4 | **Bloom's Level:** L5 (Create / Evaluate)  
+**Roll Number:** 2501010091  
 **Submission Mode:** Zosima Platform / GitHub Repository Link  
 
 ---
@@ -180,29 +178,6 @@ The system was benchmarked across multi-scale synthetic datasets scaling from $N
 #### Generated Visual Artifacts:
 - **Scalable Vector Graphic (SVG):** `benchmark/runtime_chart.svg`
 - **Interactive HTML Report Dashboard:** `benchmark/benchmark_report.html`
-
----
-
-### Phase 5: Demonstration & Viva Voce Preparation Guide (20 Marks)
-
-#### Viva Question 1: What is the time and space complexity of each component in your pipeline?
-> **Answer:**
-> - **Merge Sort:** $O(N \log N)$ time in all cases (worst, average, best), $O(N)$ auxiliary space.
-> - **0/1 Knapsack DP:** $O(N \cdot W)$ time and $O(N \cdot W)$ space (pseudo-polynomial), where $N$ is the number of parcels and $W$ is the discrete vehicle capacity units.
-> - **Dijkstra's Algorithm:** $O((V + E) \log V)$ time using a binary min-heap, $O(V)$ space for distance and predecessor tables.
-> - **Nearest-Neighbor TSP + 2-Opt:** Nearest Neighbor takes $O(K^2)$ where $K$ is the number of delivery stops. 2-Opt local search refinement takes $O(\text{iterations} \cdot K^2)$ time and $O(K)$ space.
-
-#### Viva Question 2: Why cannot we use the Greedy Fractional Knapsack approach for courier parcels?
-> **Answer:**
-> The Greedy strategy (sorting by value-to-weight ratio $v_i / w_i$) works only when items can be divided into fractions (Fractional Knapsack). In courier delivery, packages cannot be physically partitioned; a parcel is either loaded in full or left for a later trip (0/1 constraint). Greedy selection can leave unutilized capacity gaps that prevent loading higher-value combinations, leading to suboptimal solutions. Dynamic Programming explores overlapping subproblems and guarantees global optimality.
-
-#### Viva Question 3: Why is 0/1 Knapsack called a "pseudo-polynomial" algorithm?
-> **Answer:**
-> An algorithm is strictly polynomial if its running time is bounded by a polynomial in the length of the input in *bits*. For capacity $W$, the number of bits required to store $W$ is $\beta = \lceil \log_2(W) \rceil$. Therefore, $W = 2^\beta$. Since the runtime $O(N \cdot W) = O(N \cdot 2^\beta)$ is exponential with respect to the input bit-length $\beta$, it is classified as pseudo-polynomial.
-
-#### Viva Question 4: Why was Dijkstra's algorithm chosen over Bellman-Ford or Floyd-Warshall?
-> **Answer:**
-> Real-world road distances are strictly non-negative ($\omega(u, v) > 0$). Bellman-Ford ($O(V \cdot E)$) is designed to handle negative edge weights, which never occur in physical maps. Floyd-Warshall ($O(V^3)$) computes shortest paths between every pair of vertices in the whole network, whereas we only need shortest paths between the Depot and the small subset of customer nodes $K \ll V$ receiving parcels. Running Dijkstra $K$ times with a Min-Heap takes $O(K(V + E)\log V)$, which is vastly faster on sparse graphs.
 
 ---
 
