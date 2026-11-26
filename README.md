@@ -210,13 +210,3 @@ Exported runtime_chart.svg and benchmark_report.html successfully.
 ```
 
 ---
-
-## 👨‍💻 Submission Verification Checklist
-
-- [x] Implemented in Python with clean, modular, and readable code.
-- [x] Phase 1: Problem design, parcel schema, and adjacency graph format documented.
-- [x] Phase 2: Priority sorting (Merge Sort) and 0/1 Knapsack DP packing implemented with DP table evidence.
-- [x] Phase 3: Customer graph, Dijkstra shortest paths, and TSP route planner with 2-Opt local search implemented.
-- [x] Phase 4: Small and large synthetic datasets evaluated ($N=10$ to $1000$), runtime recorded, and SVG/HTML charts generated.
-- [x] Phase 5: Complete documentation, output traces, complexity proofs, and Viva Voce questions provided.
-- [x] Zero third-party dependencies required; runs offline on Zosima.
