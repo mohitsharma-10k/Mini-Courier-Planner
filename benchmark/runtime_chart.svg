@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" style="background:#ffffff; font-family: Segoe UI, Arial, sans-serif;">
+<!-- Header -->
+<rect width="900" height="520" fill="#f8fafc" rx="12"/>
+<rect x="20" y="20" width="860" height="480" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" rx="8"/>
+<text x="450.0" y="48" text-anchor="middle" font-size="18" font-weight="bold" fill="#0f172a">Mini-Courier Planner: Algorithmic Runtime Scaling Benchmark</text>
+<text x="450.0" y="66" text-anchor="middle" font-size="12" fill="#64748b">ETCCDA302: DAA - K.R. Mangalam University | Student: Mohit Sharma (2501010091)</text>
+<line x1="90" y1="440.0" x2="850" y2="440.0" stroke="#f1f5f9" stroke-width="1.5"/>
+<text x="80" y="444.0" text-anchor="end" font-size="11" fill="#64748b">0.00 ms</text>
+<line x1="90" y1="366.0" x2="850" y2="366.0" stroke="#f1f5f9" stroke-width="1.5"/>
+<text x="80" y="370.0" text-anchor="end" font-size="11" fill="#64748b">8.76 ms</text>
+<line x1="90" y1="292.0" x2="850" y2="292.0" stroke="#f1f5f9" stroke-width="1.5"/>
+<text x="80" y="296.0" text-anchor="end" font-size="11" fill="#64748b">17.52 ms</text>
+<line x1="90" y1="218.0" x2="850" y2="218.0" stroke="#f1f5f9" stroke-width="1.5"/>
+<text x="80" y="222.0" text-anchor="end" font-size="11" fill="#64748b">26.28 ms</text>
+<line x1="90" y1="144.0" x2="850" y2="144.0" stroke="#f1f5f9" stroke-width="1.5"/>
+<text x="80" y="148.0" text-anchor="end" font-size="11" fill="#64748b">35.04 ms</text>
+<line x1="90" y1="70.0" x2="850" y2="70.0" stroke="#f1f5f9" stroke-width="1.5"/>
+<text x="80" y="74.0" text-anchor="end" font-size="11" fill="#64748b">43.79 ms</text>
+<line x1="90" y1="70" x2="90" y2="440" stroke="#94a3b8" stroke-width="2"/>
+<line x1="90" y1="440" x2="850" y2="440" stroke="#94a3b8" stroke-width="2"/>
+<text x="153.33333333333334" y="464" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">N=10</text>
+<text x="153.33333333333334" y="480" text-anchor="middle" font-size="10" fill="#94a3b8">Total: 0.45ms</text>
+<rect x="109.33333333333334" y="439.80568247465993" width="20.0" height="1.0" fill="#3b82f6" rx="2"/>
+<rect x="131.33333333333334" y="438.268039448056" width="20.0" height="1.7319605519439742" fill="#10b981" rx="2"/>
+<rect x="153.33333333333334" y="438.7327117912605" width="20.0" height="1.2672882087394934" fill="#f59e0b" rx="2"/>
+<rect x="175.33333333333334" y="439.41704742397985" width="20.0" height="1.0" fill="#ef4444" rx="2"/>
+<text x="280.0" y="464" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">N=50</text>
+<text x="280.0" y="480" text-anchor="middle" font-size="10" fill="#94a3b8">Total: 1.46ms</text>
+<rect x="236.0" y="438.749608967377" width="20.0" height="1.2503910326229668" fill="#3b82f6" rx="2"/>
+<rect x="258.0" y="430.63051584338604" width="20.0" height="9.369484156613987" fill="#10b981" rx="2"/>
+<rect x="280.0" y="438.6651230867944" width="20.0" height="1.3348769132055998" fill="#f59e0b" rx="2"/>
+<rect x="302.0" y="439.63671071349467" width="20.0" height="1.0" fill="#ef4444" rx="2"/>
+<text x="406.6666666666667" y="464" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">N=100</text>
+<text x="406.6666666666667" y="480" text-anchor="middle" font-size="10" fill="#94a3b8">Total: 3.18ms</text>
+<rect x="362.6666666666667" y="437.60060099145323" width="20.0" height="2.3993990085467742" fill="#3b82f6" rx="2"/>
+<rect x="384.6666666666667" y="417.7210732903597" width="20.0" height="22.278926709640295" fill="#10b981" rx="2"/>
+<rect x="406.6666666666667" y="438.555291442037" width="20.0" height="1.4447085579630228" fill="#f59e0b" rx="2"/>
+<rect x="428.6666666666667" y="439.231178486698" width="20.0" height="1.0" fill="#ef4444" rx="2"/>
+<text x="533.3333333333334" y="464" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">N=250</text>
+<text x="533.3333333333334" y="480" text-anchor="middle" font-size="10" fill="#94a3b8">Total: 7.70ms</text>
+<rect x="489.33333333333337" y="433.82408212940953" width="20.0" height="6.175917870590466" fill="#3b82f6" rx="2"/>
+<rect x="511.33333333333337" y="389.2070885937211" width="20.0" height="50.7929114062789" fill="#10b981" rx="2"/>
+<rect x="533.3333333333334" y="433.19888661309807" width="20.0" height="6.8011133869019496" fill="#f59e0b" rx="2"/>
+<rect x="555.3333333333334" y="438.749608967377" width="20.0" height="1.2503910326229668" fill="#ef4444" rx="2"/>
+<text x="660.0" y="464" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">N=500</text>
+<text x="660.0" y="480" text-anchor="middle" font-size="10" fill="#94a3b8">Total: 17.59ms</text>
+<rect x="616.0" y="426.2456986411474" width="20.0" height="13.754301358852635" fill="#3b82f6" rx="2"/>
+<rect x="638.0" y="340.492529849775" width="20.0" height="99.50747015022503" fill="#10b981" rx="2"/>
+<rect x="660.0" y="416.14118732346446" width="20.0" height="23.85881267653553" fill="#f59e0b" rx="2"/>
+<rect x="682.0" y="428.52681741687843" width="20.0" height="11.473182583121549" fill="#ef4444" rx="2"/>
+<text x="786.6666666666667" y="464" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">N=1000</text>
+<text x="786.6666666666667" y="480" text-anchor="middle" font-size="10" fill="#94a3b8">Total: 38.08ms</text>
+<rect x="742.6666666666667" y="407.37155291898716" width="20.0" height="32.62844708101282" fill="#3b82f6" rx="2"/>
+<rect x="764.6666666666667" y="218.63009569738526" width="20.0" height="221.36990430261474" fill="#10b981" rx="2"/>
+<rect x="786.6666666666667" y="380.5219400698264" width="20.0" height="59.47805993017356" fill="#f59e0b" rx="2"/>
+<rect x="808.6666666666667" y="431.7372808790185" width="20.0" height="8.262719120981497" fill="#ef4444" rx="2"/>
+<rect x="110" y="485" width="12" height="12" fill="#3b82f6" rx="3"/>
+<text x="128" y="495" font-size="11" fill="#334155">Merge Sort O(N log N)</text>
+<rect x="295" y="485" width="12" height="12" fill="#10b981" rx="3"/>
+<text x="313" y="495" font-size="11" fill="#334155">0/1 Knapsack DP O(N·W)</text>
+<rect x="480" y="485" width="12" height="12" fill="#f59e0b" rx="3"/>
+<text x="498" y="495" font-size="11" fill="#334155">Dijkstra Shortest Path O((V+E)log V)</text>
+<rect x="665" y="485" width="12" height="12" fill="#ef4444" rx="3"/>
+<text x="683" y="495" font-size="11" fill="#334155">TSP NN + 2-Opt O(K²)</text>
+</svg>

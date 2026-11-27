@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Courier Planner: Capstone Benchmark Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 24px; }
+        .container { max-width: 1100px; margin: 0 auto; background: #1e293b; border-radius: 12px; padding: 32px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        h1 { color: #38bdf8; margin-top: 0; font-size: 26px; }
+        h2 { color: #94a3b8; font-size: 16px; margin-bottom: 24px; font-weight: normal; }
+        .badge { background: #0369a1; color: #e0f2fe; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 13px; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #334155; }
+        th { background: #0f172a; color: #38bdf8; font-weight: 600; text-transform: uppercase; font-size: 11px; }
+        tr:hover { background: #293548; }
+        .chart-box { margin-top: 30px; text-align: center; background: #ffffff; padding: 16px; border-radius: 8px; }
+        .card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 20px; }
+        .card { background: #0f172a; padding: 16px; border-radius: 8px; border-left: 4px solid #38bdf8; }
+        .card-title { font-size: 12px; color: #94a3b8; }
+        .card-val { font-size: 20px; font-weight: bold; color: #f8fafc; margin-top: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+            <h1>Mini-Courier Planner &bull; Algorithmic Performance Report</h1>
+            <span class="badge">ETCCDA302 Capstone</span>
+        </div>
+        <h2>K.R. Mangalam University | Design & Analysis of Algorithms | Student: Mohit Sharma (Roll No: 2501010091) | Faculty: Ruchika Bhakhar</h2>
+
+        <div class="card-grid">
+            <div class="card" style="border-left-color: #3b82f6;">
+                <div class="card-title">Sorting Module</div>
+                <div class="card-val">Merge Sort O(N log N)</div>
+            </div>
+            <div class="card" style="border-left-color: #10b981;">
+                <div class="card-title">Packing Optimizer</div>
+                <div class="card-val">0/1 Knapsack DP O(N&middot;W)</div>
+            </div>
+            <div class="card" style="border-left-color: #f59e0b;">
+                <div class="card-title">Shortest Path</div>
+                <div class="card-val">Dijkstra Min-Heap</div>
+            </div>
+            <div class="card" style="border-left-color: #ef4444;">
+                <div class="card-title">Route Planner</div>
+                <div class="card-val">TSP NN + 2-Opt</div>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 30px; color: #f1f5f9;">Comparative Execution Times across Input Sizes</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>N Parcels</th>
+                    <th>Nodes</th>
+                    <th>Selected</th>
+                    <th>MergeSort</th>
+                    <th>QuickSort</th>
+                    <th>0/1 Knapsack</th>
+                    <th>Dijkstra</th>
+                    <th>TSP (NN+2Opt)</th>
+                    <th>Total Time</th>
+                    <th>Util %</th>
+                    <th>Tour Dist</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="font-weight:600;">10</td>
+            <td>10</td>
+            <td>9</td>
+            <td>0.023 ms</td>
+            <td>0.019 ms</td>
+            <td style="color:#059669; font-weight:600;">0.205 ms</td>
+            <td>0.150 ms</td>
+            <td>0.069 ms</td>
+            <td style="font-weight:bold; color:#1e40af;">0.447 ms</td>
+            <td>94.0%</td>
+            <td>86.13 km</td>
+        </tr>
+        
+
+        <tr>
+            <td style="font-weight:600;">50</td>
+            <td>10</td>
+            <td>17</td>
+            <td>0.148 ms</td>
+            <td>0.118 ms</td>
+            <td style="color:#059669; font-weight:600;">1.109 ms</td>
+            <td>0.158 ms</td>
+            <td>0.043 ms</td>
+            <td style="font-weight:bold; color:#1e40af;">1.458 ms</td>
+            <td>99.2%</td>
+            <td>85.36 km</td>
+        </tr>
+        
+
+        <tr>
+            <td style="font-weight:600;">100</td>
+            <td>10</td>
+            <td>17</td>
+            <td>0.284 ms</td>
+            <td>0.174 ms</td>
+            <td style="color:#059669; font-weight:600;">2.637 ms</td>
+            <td>0.171 ms</td>
+            <td>0.091 ms</td>
+            <td style="font-weight:bold; color:#1e40af;">3.182 ms</td>
+            <td>100.0%</td>
+            <td>70.21 km</td>
+        </tr>
+        
+
+        <tr>
+            <td style="font-weight:600;">250</td>
+            <td>25</td>
+            <td>22</td>
+            <td>0.731 ms</td>
+            <td>0.510 ms</td>
+            <td style="color:#059669; font-weight:600;">6.012 ms</td>
+            <td>0.805 ms</td>
+            <td>0.148 ms</td>
+            <td style="font-weight:bold; color:#1e40af;">7.695 ms</td>
+            <td>99.2%</td>
+            <td>136.82 km</td>
+        </tr>
+        
+
+        <tr>
+            <td style="font-weight:600;">500</td>
+            <td>50</td>
+            <td>30</td>
+            <td>1.628 ms</td>
+            <td>1.118 ms</td>
+            <td style="color:#059669; font-weight:600;">11.778 ms</td>
+            <td>2.824 ms</td>
+            <td>1.358 ms</td>
+            <td style="font-weight:bold; color:#1e40af;">17.589 ms</td>
+            <td>100.0%</td>
+            <td>243.40 km</td>
+        </tr>
+        
+
+        <tr>
+            <td style="font-weight:600;">1000</td>
+            <td>50</td>
+            <td>34</td>
+            <td>3.862 ms</td>
+            <td>2.416 ms</td>
+            <td style="color:#059669; font-weight:600;">26.202 ms</td>
+            <td>7.040 ms</td>
+            <td>0.978 ms</td>
+            <td style="font-weight:bold; color:#1e40af;">38.082 ms</td>
+            <td>100.0%</td>
+            <td>256.67 km</td>
+        </tr>
+        
+            </tbody>
+        </table>
+
+        <div class="chart-box">
+            <h4 style="color:#0f172a; margin:0 0 12px 0;">Algorithmic Scaling Vector Graphic (SVG)</h4>
+            <object data="runtime_chart.svg" type="image/svg+xml" style="max-width:100%; height:auto;"></object>
+        </div>
+    </div>
+</body>
+</html>
