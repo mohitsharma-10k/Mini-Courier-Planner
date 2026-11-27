@@ -1,20 +1,11 @@
 # CAPSTONE ASSIGNMENT REPORT
 ## MINI-COURIER PLANNER: INTELLIGENT LOGISTICS & ROUTE OPTIMIZATION SYSTEM
-
-- **Institution**: K.R. Mangalam University, Gurugram, Haryana
 - **Course**: Design & Analysis of Algorithms (ETCCDA302)
-- **Programme & Semester**: B.Tech CSE & Specializations (Semester V / VI)
+- **Programme**: B.Tech CSE core 
 - **Faculty In-Charge**: Dr. Shweta Agarwal
 - **Student Name**: Mohit Sharma
-- **Roll Number / PRN**: 2501010091
-- **Assessment Type**: Coding-based Capstone Project
-- **Maximum Marks**: 100 Marks (Scaled to 10 Marks)
-- **Course Outcomes (COs)**:
-  - **CO1**: Analyze worst-case, average-case, and amortized running times of algorithms.
-  - **CO2**: Apply Divide-and-Conquer paradigms to sorting and searching problems.
-  - **CO3**: Formulate and apply Dynamic Programming and Greedy strategies for combinatorial optimization.
-  - **CO4**: Model real-world systems as graphs and apply shortest-path / network flow algorithms.
-- **Blooms Taxonomy Level**: L5 (Create / Evaluate)
+- **Roll Number**: 2501010091
+
 
 ---
 
@@ -204,7 +195,7 @@ To satisfy the requirements of testing with larger datasets, the system was subj
 
 ---
 
-## 6. PHASE 5: DEMONSTRATION, OPTIMIZATION ANALYSIS & VIVA VOCE PREPARATION
+## 6. PHASE 5: DEMONSTRATION, OPTIMIZATION ANALYSIS 
 
 ### 6.1 Future Optimization Strategies
 1. **Branch and Bound for 0/1 Knapsack**: For very large capacity scales ($W > 10^6$), a Branch-and-Bound algorithm pruned with fractional knapsack upper bounds avoids large memory footprints.
@@ -212,20 +203,5 @@ To satisfy the requirements of testing with larger datasets, the system was subj
 3. **Genetic Algorithms / Simulated Annealing**: For fleet sizes with multiple delivery vans (Capacitated Vehicle Routing Problem - CVRP).
 
 ---
-
-### 6.2 Viva Voce Questions & Model Answers
-
-#### Q1: Why is 0/1 Knapsack classified as having pseudo-polynomial time complexity?
-> **Answer**: The time complexity of 0/1 Knapsack DP is $O(N \cdot W)$, where $N$ is the number of items and $W$ is the numeric capacity. In computational complexity theory, an algorithm is polynomial only if its running time is bounded by a polynomial in the *length of the input in bits*. The number $W$ requires $\log_2(W)$ bits to represent. Since $W = 2^{\log_2(W)}$, the runtime is exponential with respect to the input length in bits unless $W$ is polynomially bounded. Hence, it is pseudo-polynomial.
-
-#### Q2: Why cannot we use the Greedy fractional knapsack approach for parcel delivery?
-> **Answer**: The Greedy choice property (taking items with highest value-to-weight ratio $v_i / w_i$) only guarantees optimality when items are infinitely divisible (Fractional Knapsack). In parcel delivery, an item must either be taken entirely or left behind (0/1 condition). Greedy can fail to fill available capacity with high-value combinations, leading to sub-optimal solutions. Dynamic Programming guarantees global optimality by exploring overlapping subproblems.
-
-#### Q3: What is the purpose of the 2-Opt algorithm in TSP?
-> **Answer**: Nearest Neighbor is a greedy heuristic that can produce route cross-overs (intersecting edges) because it makes locally greedy choices without looking ahead. 2-Opt is an iterative local search improvement algorithm that evaluates pairs of edges and systematically reverses path segments to eliminate crossings, decreasing total tour distance until local optimality is reached.
-
-#### Q4: Why is Dijkstra's algorithm preferred over Bellman-Ford or Floyd-Warshall here?
-> **Answer**: Road distances between physical addresses are strictly non-negative ($\omega(u, v) > 0$). Bellman-Ford ($O(V \cdot E)$) is designed to handle negative edge weights, which do not exist in geographic maps. Floyd-Warshall ($O(V^3)$) computes all-pairs shortest paths across the whole graph, whereas our deliveries only visit a small subset of nodes $K \ll V$. Running Dijkstra with a Min-Heap $K$ times takes $O(K(V + E)\log V)$, which is drastically faster on sparse city graphs.
-
 ---
 *Report Prepared for ETCCDA302 Capstone Evaluation | K.R. Mangalam University*
